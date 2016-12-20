@@ -1,0 +1,760 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Star" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="h1,h2,h3,h4,h5,h6,p,blockquote {    margin: 0;    padding: 0;}body {    font-family: “Helvetica Neue”, Helvetica, “Hiragino Sans GB”, Arial, sans-serif;    font-size: 13px;    line-height: 18px;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to use Markdown as a starter">
+<meta property="og:url" content="http://yoursite.com/2016/07/26/how-to-use-markdown-as-a-starter/index.html">
+<meta property="og:site_name" content="Star">
+<meta property="og:description" content="h1,h2,h3,h4,h5,h6,p,blockquote {    margin: 0;    padding: 0;}body {    font-family: “Helvetica Neue”, Helvetica, “Hiragino Sans GB”, Arial, sans-serif;    font-size: 13px;    line-height: 18px;">
+<meta property="og:updated_time" content="2016-12-20T03:00:14.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to use Markdown as a starter">
+<meta name="twitter:description" content="h1,h2,h3,h4,h5,h6,p,blockquote {    margin: 0;    padding: 0;}body {    font-family: “Helvetica Neue”, Helvetica, “Hiragino Sans GB”, Arial, sans-serif;    font-size: 13px;    line-height: 18px;">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/07/26/how-to-use-markdown-as-a-starter/"/>
+
+
+
+
+
+  <title> How to use Markdown as a starter | Star </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Star</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">不要温和地走进那个良夜。</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/07/26/how-to-use-markdown-as-a-starter/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Star">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/winnie-pooh-full-hd-wallpaper-image-tablet.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Star">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Star" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                How to use Markdown as a starter
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-07-26T20:16:27-04:00">
+                2016-07-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术冷板凳/" itemprop="url" rel="index">
+                    <span itemprop="name">技术冷板凳</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <script src="/assets/js/DPlayer.min.js"> </script><p><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"></p>
+<p><style type="text/css"><br>h1,<br>h2,<br>h3,<br>h4,<br>h5,<br>h6,<br>p,<br>blockquote {<br>    margin: 0;<br>    padding: 0;<br>}<br>body {<br>    font-family: “Helvetica Neue”, Helvetica, “Hiragino Sans GB”, Arial, sans-serif;<br>    font-size: 13px;<br>    line-height: 18px;<br>    color: #737373;<br>    background-color: white;<br>    margin: 10px 13px 10px 13px;<br>}<br>table {<br>    margin: 10px 0 15px 0;<br>    border-collapse: collapse;<br>}<br>td,th {<br>    border: 1px solid #ddd;<br>    padding: 3px 10px;<br>}<br>th {<br>    padding: 5px 10px;<br>}</p>
+<p>a {<br>    color: #0069d6;<br>}<br>a:hover {<br>    color: #0050a3;<br>    text-decoration: none;<br>}<br>a img {<br>    border: none;<br>}<br>p {<br>    margin-bottom: 9px;<br>}<br>h1,<br>h2,<br>h3,<br>h4,<br>h5,<br>h6 {<br>    color: #404040;<br>    line-height: 36px;<br>}<br>h1 {<br>    margin-bottom: 18px;<br>    font-size: 30px;<br>}<br>h2 {<br>    font-size: 24px;<br>}<br>h3 {<br>    font-size: 18px;<br>}<br>h4 {<br>    font-size: 16px;<br>}<br>h5 {<br>    font-size: 14px;<br>}<br>h6 {<br>    font-size: 13px;<br>}<br>hr {<br>    margin: 0 0 19px;<br>    border: 0;<br>    border-bottom: 1px solid #ccc;<br>}<br>blockquote {<br>    padding: 13px 13px 21px 15px;<br>    margin-bottom: 18px;<br>    font-family:georgia,serif;<br>    font-style: italic;<br>}<br>blockquote:before {<br>    content:”\201C”;<br>    font-size:40px;<br>    margin-left:-10px;<br>    font-family:georgia,serif;<br>    color:#eee;<br>}<br>blockquote p {<br>    font-size: 14px;<br>    font-weight: 300;<br>    line-height: 18px;<br>    margin-bottom: 0;<br>    font-style: italic;<br>}<br>code, pre {<br>    font-family: Monaco, Andale Mono, Courier New, monospace;<br>}<br>code {<br>    background-color: #fee9cc;<br>    color: rgba(0, 0, 0, 0.75);<br>    padding: 1px 3px;<br>    font-size: 12px;<br>    -webkit-border-radius: 3px;<br>    -moz-border-radius: 3px;<br>    border-radius: 3px;<br>}<br>pre {<br>    display: block;<br>    padding: 14px;<br>    margin: 0 0 18px;<br>    line-height: 16px;<br>    font-size: 11px;<br>    border: 1px solid #d9d9d9;<br>    white-space: pre-wrap;<br>    word-wrap: break-word;<br>}<br>pre code {<br>    background-color: #fff;<br>    color:#737373;<br>    font-size: 11px;<br>    padding: 0;<br>}<br>sup {<br>    font-size: 0.83em;<br>    vertical-align: super;<br>    line-height: 0;<br>}</p>
+<ul>
+<li><p>{<br>  -webkit-print-color-adjust: exact;<br>}<br>@media screen and (min-width: 914px) {<br>  body {</p>
+<pre><code>width: 854px;
+margin:10px auto;
+</code></pre><p>  }<br>}<br>@media print {<br>  body,code,pre code,h1,h2,h3,h4,h5,h6 {</p>
+<pre><code>color: black;
+</code></pre><p>  }<br>  table, pre {</p>
+<pre><code>page-break-inside: avoid;
+</code></pre><p>  }<br>}</style></p>
+<title><br></title>
+
+<p>  &nbsp;</p>
+<p>  Recently, I am desired&nbsp;to write wordpress for do some summarization.&nbsp;But the format and writing style keep confusing me.</p>
+
+
+<p>#<br>    Let&#39;s try Markdown this time!</p>
+<pre><code>There are two ways to apply Markdown in wordpress:
+</code></pre><p>####<br>    1. Install plugins:</p>
+<pre><code>The recommended plugin is [Markdown for WordPress and bbPress](https://wordpress.org/plugins/markdown-for-wordpress-and-bbpress/) But it doesn&amp;#39;t work on my wordpress. Sad.
+</code></pre><p>####<br>    2. Using Markdown Tools&nbsp;</p>
+<pre><code>You can write the article in advace using softwares before paste it to the blog.
+
+I prefer this way since using Wordpress to write is a huge disaster.
+</code></pre><p>######<br>    Step 1: Know about the grammar of Markdown :</p>
+<pre><code>[CMD Markdown](https://www.zybuluo.com/mdeditor) is really a good tutorial. Or any other tutorials, whatever.
+</code></pre><p>######<br>    Step 2: Download a good Markdown Tool :</p>
+<pre><code>It&amp;#39;s very convenience for us to write and review at the same time.&amp;nbsp;
+
+So, you can download [Mou](http://25.io/mou/) if&amp;nbsp;you use Mac.
+</code></pre><p>######<br>    Step 3: Keep practising to be perfect :</p>
+<pre><code>As you can see, this article is written in Markdown.
+
+**_Cheers!_**
+
+&amp;nbsp;
+
+&amp;nbsp;
+
+&amp;nbsp;
+</code></pre>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/21/2016-07-21/" rel="next" title="2016-07-21">
+                <i class="fa fa-chevron-left"></i> 2016-07-21
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/07/27/e4-bd-bf-e7-94-a8emacs-e4-bb-8e-e6-97-a0-e6-b3-95-e5-85-a5-e9-97-a8-e5-88-b0-e6-94-be-e5-bc-83/" rel="prev" title="使用Emacs: 从无法入门到放弃">
+                使用Emacs: 从无法入门到放弃 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/winnie-pooh-full-hd-wallpaper-image-tablet.jpg"
+               alt="Star" />
+          <p class="site-author-name" itemprop="name">Star</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">18</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/ZhuTingxiang" target="_blank" title="Github">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Github
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.douban.com/people/45283318/" target="_blank" title="Douban">
+                  
+                    <i class="fa fa-fw fa-douban"></i>
+                  
+                  Douban
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/starshashou?is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.instagram.com/starstarpinkrrr/" target="_blank" title="Instagram">
+                  
+                    <i class="fa fa-fw fa-instagram"></i>
+                  
+                  Instagram
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.linkedin.com/in/tingxiangzhu" target="_blank" title="Linkedin">
+                  
+                    <i class="fa fa-fw fa-linkedin"></i>
+                  
+                  Linkedin
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://farer.org/" title="Eric" target="_blank">Eric</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://blog.ihypo.net/" title="Hypo" target="_blank">Hypo</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.shuang0420.com/" title="徐阿衡" target="_blank">徐阿衡</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://codefalling.com/" title="codefalling" target="_blank">codefalling</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Star</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
